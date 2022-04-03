@@ -15,6 +15,8 @@
 	<description>Payment Service</description>
 	<properties>
 		<java.version>11</java.version>
+		<axon.version>4.5.8</axon.version>
+		<saga-core.version>0.0.6-SNAPSHOT</saga-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -24,6 +26,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.axonframework</groupId>
+			<artifactId>axon-spring-boot-starter</artifactId>
+			<version>${axon.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.adetiamarhadi</groupId>
+			<artifactId>saga-core</artifactId>
+			<version>${saga-core.version}</version>
 		</dependency>
 
 		<dependency>
