@@ -18,7 +18,7 @@ public class PaymentAggregate {
     public PaymentAggregate() {}
 
     @CommandHandler
-    public void handle(ProcessPaymentCommand processPaymentCommand) {
+    public PaymentAggregate(ProcessPaymentCommand processPaymentCommand) {
 
         if (processPaymentCommand.getOrderId() == null || processPaymentCommand.getOrderId().isBlank()) {
             throw new IllegalArgumentException("order id can not be empty.");
