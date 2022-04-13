@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<axon.version>4.5.8</axon.version>
-		<saga-core.version>0.0.7-SNAPSHOT</saga-core.version>
+		<saga-core.version>0.0.10-SNAPSHOT</saga-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
